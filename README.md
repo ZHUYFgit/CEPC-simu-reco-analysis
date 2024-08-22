@@ -4,13 +4,17 @@ introduce the whole process of simulation, reconstruction, and analysis at the C
 ------
 
 ## Generator (based on whizard)
+ - The following operations are based on the CEPC env, so you need to load the container of CEPC env with the following commands.
+   `export PATH=/cvmfs/container.ihep.ac.cn/bin:$PATH`
+   `hep_container shell CentOS7`
+   `export PATH=/cvmfs/common.ihep.ac.cn/software/hepjob/bin:$PATH`
  - Download whizard from [https://github.com/lhprojects/WhizardAis]([http://madgraph.phys.ucl.ac.be](https://github.com/lhprojects/WhizardAis)).
  - If you want to generate e+e- -> bb with the center of mass energy of 91.2 GeV, follow the steps listed in the following.
    * Edit the 2fermions.prc to specilize the process, shown as the file [[generator/2fermions.prc]](generator/2fermions.prc).
    * Edit the mkin.sh to set the luminosity or number of events you want to generate, just as the file [[generator/mkin.sh]](generator/mkin.sh).
    * Edit the file example to set running process, as the file [[generator/example]](generator/example).
    * Press the command `source example` and you would get the directory named 2fermions containing the files used to generate samples.
-   * Go to the directory 2fermions and sh sub_all.sh. The job used to generate samples would be submitted to cluster.
+   * Go to the directory 2fermions and sh sub_all.sh. The job used to generate samples would be submitted to cluster. Note: you need to change the command `hep_sub` to `hep_sub -os CentOS7` in sub_all.sh.
 
 ## Simulation
 #### Full Simulation
