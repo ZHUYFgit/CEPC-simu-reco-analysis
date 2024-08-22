@@ -15,13 +15,15 @@ There is a detailed description of CEPC software and analysis procedure written 
    * Edit the mkin.sh to set the luminosity or number of events you want to generate, just as the file [[generator/mkin.sh]](generator/mkin.sh).
    * Edit the file example to set running process, as the file [[generator/example]](generator/example).
    * Press the command `source example` and you would get the directory named 2fermions containing the files used to generate samples.
-   * Go to the directory 2fermions and sh sub_all.sh. The job used to generate samples would be submitted to cluster. Note: you need to change the command `hep_sub` to `hep_sub -os CentOS7` in sub_all.sh.
+   * Go to the directory 2fermions and sh sub_all.sh. The job used to generate samples would be submitted to cluster. Note: you need to change the command `hep_sub` to `hep_sub -os CentOS7` in sub_all.sh. Once the job has been succeffuly finished, the generated samples would stored in another directory named data.
 
 ## Simulation
 #### Full Simulation
- - If you can access the computing resource from Institute of High Energy Physics, Chinese Academy of Sciences, you can do full simulation with CEPC Software.
- - Welcome to join CEPC.
- - The directory [[full_simulation]](full_simulation) provides the code used to extract the features from the reconstructed files (with postfix slcio).
+ - If you have generated samples. The next step is to simulate them based on the baseline detector of CEPC.
+ - See the file [[simulation/sub_rumMokka.sh]](simulation/sub_rumMokka.sh) and change the path of input file to variable inputfile, then sh sub_runMokka.sh. There are some parameters with special meanings listed in the following.
+   * NEvt: number of events stored in each simulated file.
+   * nFile: the number of files generated with generator, whizard.
+   * nStartEntNo: the number of events stored in each generator file divided by NEvt.
 
 
 ## Install Miniconda3, weaver, and ParticleNet
