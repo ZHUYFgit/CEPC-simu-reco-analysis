@@ -1,5 +1,6 @@
 # CEPC-simu-reco-analysis
-introduce the whole process of simulation, reconstruction, and analysis at the CEPC
+Introduce the whole process of simulation, reconstruction, and analysis at the CEPC.
+There is a detailed description of CEPC software and analysis procedure written by Yuexin Wang, https://code.ihep.ac.cn/wangyuexin/cepcsoft-tutorial/-/wikis/Quick-Start.
 
 ------
 
