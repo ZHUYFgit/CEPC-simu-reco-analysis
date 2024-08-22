@@ -1,11 +1,11 @@
 # CEPC-simu-reco-analysis
 Introduce the whole process of simulation, reconstruction, and analysis at the CEPC.
-There is a detailed description of CEPC software and analysis procedure written by Yuexin Wang, [https://code.ihep.ac.cn/wangyuexin/cepcsoft-tutorial/-/wikis/Quick-Start](https://code.ihep.ac.cn/wangyuexin/cepcsoft-tutorial/-/wikis/Quick-Start).
+There is a detailed description of CEPC software and analysis procedure written by Yuexin Wang, https://code.ihep.ac.cn/wangyuexin/cepcsoft-tutorial/-/wikis/Quick-Start.
 
 ------
 
 ## Generator (based on whizard)
- - Download whizard from [https://github.com/lhprojects/WhizardAis]([http://madgraph.phys.ucl.ac.be](https://github.com/lhprojects/WhizardAis)).
+ - Download whizard from https://github.com/lhprojects/WhizardAis.
  - The following operations are based on the CEPC env, so you need to load the container of CEPC env with the following commands.
    * `export PATH=/cvmfs/container.ihep.ac.cn/bin:$PATH`
    * `hep_container shell CentOS7`
