@@ -5,9 +5,9 @@ introduce the whole process of simulation, reconstruction, and analysis at the C
 
 ## Generator (based on whizard)
  - The following operations are based on the CEPC env, so you need to load the container of CEPC env with the following commands.
-   `export PATH=/cvmfs/container.ihep.ac.cn/bin:$PATH`
-   `hep_container shell CentOS7`
-   `export PATH=/cvmfs/common.ihep.ac.cn/software/hepjob/bin:$PATH`
+   * `export PATH=/cvmfs/container.ihep.ac.cn/bin:$PATH`
+   * `hep_container shell CentOS7`
+   * `export PATH=/cvmfs/common.ihep.ac.cn/software/hepjob/bin:$PATH`
  - Download whizard from [https://github.com/lhprojects/WhizardAis]([http://madgraph.phys.ucl.ac.be](https://github.com/lhprojects/WhizardAis)).
  - If you want to generate e+e- -> bb with the center of mass energy of 91.2 GeV, follow the steps listed in the following.
    * Edit the 2fermions.prc to specilize the process, shown as the file [[generator/2fermions.prc]](generator/2fermions.prc).
