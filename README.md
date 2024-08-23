@@ -27,7 +27,9 @@ There is a detailed description of CEPC software and analysis procedure written 
 
 
 ## Reconstruction
- - Install Miniconda3 according to your OS, such as you can install it with the following commands. You need to change the path in env_conda.sh to your installed miniconda3 path.
+ - See the file [[reco/workReco.sh]](reco/workReco.sh), you need to change the path of input file, then `sh workReco.sh`.
+
+## Analysis
  ```
 $ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-lnux-x86_64.sh
 $ chmod +x Miniconda3-latest-Linux-x86_64.sh
